@@ -3,6 +3,9 @@ ytd-comments,
 #dot.ytd-video-primary-info-renderer,
 #text.ytd-toggle-button-renderer,
 #sentiment.ytd-video-primary-info-renderer,
-#owner-sub-count.ytd-video-owner-renderer {
+#owner-sub-count.ytd-video-owner-renderer,
+#metadata-line.ytd-video-meta-block span.ytd-video-meta-block:first-child,
+#metadata-line.ytd-video-meta-block
+  > .ytd-video-meta-block:not(:last-of-type):after {
   display: none !important;
 }
