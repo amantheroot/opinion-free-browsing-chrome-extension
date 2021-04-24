@@ -1,1 +1,1 @@
-console.log("Pop!");
+console.log("Init!");

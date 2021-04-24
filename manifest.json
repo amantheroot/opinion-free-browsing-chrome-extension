@@ -25,5 +25,11 @@
       "512": "/icons/icon-512x512.png"
     }
   },
-  "options_page": "options/index.html"
+  "permissions": ["activeTab", "declarativeContent"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "css": ["content.css"]
+    }
+  ]
 }

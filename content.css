@@ -1,0 +1,8 @@
+ytd-comments,
+#count.ytd-video-primary-info-renderer,
+#dot.ytd-video-primary-info-renderer,
+#text.ytd-toggle-button-renderer,
+#sentiment.ytd-video-primary-info-renderer,
+#owner-sub-count.ytd-video-owner-renderer {
+  display: none !important;
+}
