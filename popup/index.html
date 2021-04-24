@@ -7,7 +7,38 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>NO MORE OPINIONS!</h1>
+    <h3>What to hide?</h3>
+    <form>
+      <ul>
+        <li>
+          <input
+            type="checkbox"
+            id="comments"
+            name="comments"
+            value="comments"
+          />
+          <label for="comments">Comments</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ratings" name="ratings" value="ratings" />
+          <label for="ratings">Likes/Dislikes</label>
+        </li>
+        <li>
+          <input type="checkbox" id="views" name="views" value="views" />
+          <label for="views">Views</label>
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            id="subscribers"
+            name="subscribers"
+            value="subscribers"
+          />
+          <label for="subscribers">Subscribers</label>
+        </li>
+      </ul>
+      <input type="submit" value="HIDE!" />
+    </form>
     <script src="script.js"></script>
   </body>
 </html>
