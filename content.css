@@ -1,14 +1,32 @@
-.ofb-enabled-comments ytd-comments,
+/* Hide Comments */
+.ofb-enabled-comments ytd-comments {
+  display: none !important;
+}
+
+/* Hide Ratings */
+.ofb-enabled-ratings #text.ytd-toggle-button-renderer,
+.ofb-enabled-ratings #sentiment.ytd-video-primary-info-renderer {
+  display: none !important;
+}
+
+/* Hide Views */
 .ofb-enabled-views #count.ytd-video-primary-info-renderer,
 .ofb-enabled-views #dot.ytd-video-primary-info-renderer,
-.ofb-enabled-ratings #text.ytd-toggle-button-renderer,
-.ofb-enabled-ratings #sentiment.ytd-video-primary-info-renderer,
-.ofb-enabled-subscribers #owner-sub-count.ytd-video-owner-renderer,
 .ofb-enabled-views
   #metadata-line.ytd-video-meta-block
   span.ytd-video-meta-block:first-child,
 .ofb-enabled-views
   #metadata-line.ytd-video-meta-block
-  > .ytd-video-meta-block:not(:last-of-type):after {
+  > .ytd-video-meta-block:not(:last-of-type):after,
+.ofb-enabled-views
+  #metadata-line.ytd-grid-video-renderer
+  span.ytd-grid-video-renderer:first-child {
+  display: none !important;
+}
+
+/* Hide Subscribers */
+.ofb-enabled-subscribers #owner-sub-count.ytd-video-owner-renderer,
+.ofb-enabled-subscribers #subscriber-count.ytd-c4-tabbed-header-renderer,
+.ofb-enabled-subscribers #thumbnail-attribution.ytd-grid-channel-renderer {
   display: none !important;
 }

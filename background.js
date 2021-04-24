@@ -6,6 +6,8 @@ const hide = {
 };
 
 chrome.runtime.onInstalled.addListener(() => {
+  // Initialize Data
   chrome.storage.sync.set(hide);
+
   console.log("No More Opinions!");
 });

@@ -36,10 +36,12 @@ const update = () => {
   });
 };
 
+// Listen to Updates
 chrome.runtime.onMessage.addListener(({ message }) => {
   if (message === "update") {
     update();
   }
 });
 
+// Initialize Update
 update();
