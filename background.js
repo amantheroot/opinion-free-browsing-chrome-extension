@@ -7,5 +7,5 @@ const hide = {
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set(hide);
-  console.log("Extension Setup.");
+  console.log("No More Opinions!");
 });
