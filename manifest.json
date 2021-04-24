@@ -24,5 +24,6 @@
       "256": "/icons/icon-256x256.png",
       "512": "/icons/icon-512x512.png"
     }
-  }
+  },
+  "options_page": "options/index.html"
 }
