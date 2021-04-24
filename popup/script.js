@@ -8,5 +8,11 @@ form.addEventListener("submit", (e) => {
     formData[el.name] = el.checked;
   });
 
-  console.log(formData);
+  chrome.storage.sync.set(formData);
+});
+
+[...form.elements].slice(0, -1).forEach((el) => {
+  chrome.storage.sync.get(el.name, (res) => {
+    el.checked = res[el.name];
+  });
 });

@@ -1,3 +1,11 @@
+const hide = {
+  comments: true,
+  ratings: true,
+  views: true,
+  subscribers: true,
+};
+
 chrome.runtime.onInstalled.addListener(() => {
-  console.log("Extension Installed!");
+  chrome.storage.sync.set(hide);
+  console.log("Extension Setup.");
 });

@@ -25,7 +25,7 @@
       "512": "/icons/icon-512x512.png"
     }
   },
-  "permissions": ["activeTab", "declarativeContent"],
+  "permissions": ["storage", "activeTab", "declarativeContent"],
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
